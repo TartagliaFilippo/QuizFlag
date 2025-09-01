@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QuizFlags</string>
+
+    <string name="game_classic">Classic</string>
+    <string name="game_survival">Survival</string>
+    <string name="game_region">Continent</string>
+</resources>

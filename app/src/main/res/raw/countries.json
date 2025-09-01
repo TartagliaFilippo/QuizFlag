@@ -1,0 +1,2034 @@
+[
+  {
+    "nameIta": "Afghanistan",
+    "nameEng": "Afghanistan",
+    "nameEsp": "Afganistán",
+    "code": "AF",
+    "pathImg": "af.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Albania",
+    "nameEng": "Albania",
+    "nameEsp": "Albania",
+    "code": "AL",
+    "pathImg": "al.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Algeria",
+    "nameEng": "Algeria",
+    "nameEsp": "Argelia",
+    "code": "DZ",
+    "pathImg": "dz.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Andorra",
+    "nameEng": "Andorra",
+    "nameEsp": "Andorra",
+    "code": "AD",
+    "pathImg": "ad.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Angola",
+    "nameEng": "Angola",
+    "nameEsp": "Angola",
+    "code": "AO",
+    "pathImg": "ao.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Anguilla",
+    "nameEng": "Anguilla",
+    "nameEsp": "Anguila",
+    "code": "AI",
+    "pathImg": "ai.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Antartide",
+    "nameEng": "Antarctica",
+    "nameEsp": "Antártida",
+    "code": "AQ",
+    "pathImg": "aq.png",
+    "region": "an"
+  },
+  {
+    "nameIta": "Antigua e Barbuda",
+    "nameEng": "Antigua & Barbuda",
+    "nameEsp": "Antigua y Barbuda",
+    "code": "AG",
+    "pathImg": "ag.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Arabia Saudita",
+    "nameEng": "Saudi Arabia",
+    "nameEsp": "Arabia Saudí",
+    "code": "SA",
+    "pathImg": "sa.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Argentina",
+    "nameEng": "Argentina",
+    "nameEsp": "Argentina",
+    "code": "AR",
+    "pathImg": "ar.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Armenia",
+    "nameEng": "Armenia",
+    "nameEsp": "Armenia",
+    "code": "AM",
+    "pathImg": "am.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Aruba",
+    "nameEng": "Aruba",
+    "nameEsp": "Aruba",
+    "code": "AW",
+    "pathImg": "aw.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Australia",
+    "nameEng": "Australia",
+    "nameEsp": "Australia",
+    "code": "AU",
+    "pathImg": "au.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Austria",
+    "nameEng": "Austria",
+    "nameEsp": "Austria",
+    "code": "AT",
+    "pathImg": "at.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Azerbaigian",
+    "nameEng": "Azerbaijan",
+    "nameEsp": "Azerbaiyán",
+    "code": "AZ",
+    "pathImg": "az.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Bahamas",
+    "nameEng": "Bahamas",
+    "nameEsp": "Bahamas",
+    "code": "BS",
+    "pathImg": "bs.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Bahrein",
+    "nameEng": "Bahrain",
+    "nameEsp": "Baréin",
+    "code": "BH",
+    "pathImg": "bh.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Bangladesh",
+    "nameEng": "Bangladesh",
+    "nameEsp": "Bangladés",
+    "code": "BD",
+    "pathImg": "bd.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Barbados",
+    "nameEng": "Barbados",
+    "nameEsp": "Barbados",
+    "code": "BB",
+    "pathImg": "bb.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Belgio",
+    "nameEng": "Belgium",
+    "nameEsp": "Bélgica",
+    "code": "BE",
+    "pathImg": "be.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Belize",
+    "nameEng": "Belize",
+    "nameEsp": "Belice",
+    "code": "BZ",
+    "pathImg": "bz.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Benin",
+    "nameEng": "Benin",
+    "nameEsp": "Benín",
+    "code": "BJ",
+    "pathImg": "bj.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Bermuda",
+    "nameEng": "Bermuda",
+    "nameEsp": "Bermudas",
+    "code": "BM",
+    "pathImg": "bm.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Bhutan",
+    "nameEng": "Bhutan",
+    "nameEsp": "Bután",
+    "code": "BT",
+    "pathImg": "bt.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Bielorussia",
+    "nameEng": "Belarus",
+    "nameEsp": "Bielorrusia",
+    "code": "BY",
+    "pathImg": "by.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Bolivia",
+    "nameEng": "Bolivia",
+    "nameEsp": "Bolivia",
+    "code": "BO",
+    "pathImg": "bo.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Bosnia ed Erzegovina",
+    "nameEng": "Bosnia & Herzegovina",
+    "nameEsp": "Bosnia y Herzegovina",
+    "code": "BA",
+    "pathImg": "ba.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Botswana",
+    "nameEng": "Botswana",
+    "nameEsp": "Botsuana",
+    "code": "BW",
+    "pathImg": "bw.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Brasile",
+    "nameEng": "Brazil",
+    "nameEsp": "Brasil",
+    "code": "BR",
+    "pathImg": "br.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Brunei",
+    "nameEng": "Brunei",
+    "nameEsp": "Brunéi",
+    "code": "BN",
+    "pathImg": "bn.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Bulgaria",
+    "nameEng": "Bulgaria",
+    "nameEsp": "Bulgaria",
+    "code": "BG",
+    "pathImg": "bg.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Burkina Faso",
+    "nameEng": "Burkina Faso",
+    "nameEsp": "Burkina Faso",
+    "code": "BF",
+    "pathImg": "bf.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Burundi",
+    "nameEng": "Burundi",
+    "nameEsp": "Burundi",
+    "code": "BI",
+    "pathImg": "bi.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Cambogia",
+    "nameEng": "Cambodia",
+    "nameEsp": "Camboya",
+    "code": "KH",
+    "pathImg": "kh.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Camerun",
+    "nameEng": "Cameroon",
+    "nameEsp": "Camerún",
+    "code": "CM",
+    "pathImg": "cm.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Canada",
+    "nameEng": "Canada",
+    "nameEsp": "Canadá",
+    "code": "CA",
+    "pathImg": "ca.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Capo Verde",
+    "nameEng": "Cape Verde",
+    "nameEsp": "Cabo Verde",
+    "code": "CV",
+    "pathImg": "cv.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Caraibi Olandesi",
+    "nameEng": "Caribbean Netherlands",
+    "nameEsp": "Caribe neerlandés",
+    "code": "BQ",
+    "pathImg": "bq.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Cechia",
+    "nameEng": "Czechia",
+    "nameEsp": "Chequia",
+    "code": "CZ",
+    "pathImg": "cz.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Ciad",
+    "nameEng": "Chad",
+    "nameEsp": "Chad",
+    "code": "TD",
+    "pathImg": "td.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Cile",
+    "nameEng": "Chile",
+    "nameEsp": "Chile",
+    "code": "CL",
+    "pathImg": "cl.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Cina",
+    "nameEng": "China",
+    "nameEsp": "China",
+    "code": "CN",
+    "pathImg": "cn.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Cipro",
+    "nameEng": "Cyprus",
+    "nameEsp": "Chipre",
+    "code": "CY",
+    "pathImg": "cy.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Città del Vaticano",
+    "nameEng": "Vatican City",
+    "nameEsp": "Ciudad del Vaticano",
+    "code": "VA",
+    "pathImg": "va.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Colombia",
+    "nameEng": "Colombia",
+    "nameEsp": "Colombia",
+    "code": "CO",
+    "pathImg": "co.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Comore",
+    "nameEng": "Comoros",
+    "nameEsp": "Comoras",
+    "code": "KM",
+    "pathImg": "km.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Congo - Kinshasa",
+    "nameEng": "Congo - Kinshasa",
+    "nameEsp": "República Democrática del Congo",
+    "code": "CD",
+    "pathImg": "cd.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Congo-Brazzaville",
+    "nameEng": "Congo - Brazzaville",
+    "nameEsp": "Congo",
+    "code": "CG",
+    "pathImg": "cg.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Corea del Nord",
+    "nameEng": "North Korea",
+    "nameEsp": "Corea del Norte",
+    "code": "KP",
+    "pathImg": "kp.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Corea del Sud",
+    "nameEng": "South Korea",
+    "nameEsp": "Corea del Sur",
+    "code": "KR",
+    "pathImg": "kr.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Costa Rica",
+    "nameEng": "Costa Rica",
+    "nameEsp": "Costa Rica",
+    "code": "CR",
+    "pathImg": "cr.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Costa d’Avorio",
+    "nameEng": "Côte d’Ivoire",
+    "nameEsp": "Côte d’Ivoire",
+    "code": "CI",
+    "pathImg": "ci.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Croazia",
+    "nameEng": "Croatia",
+    "nameEsp": "Croacia",
+    "code": "HR",
+    "pathImg": "hr.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Cuba",
+    "nameEng": "Cuba",
+    "nameEsp": "Cuba",
+    "code": "CU",
+    "pathImg": "cu.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Curaçao",
+    "nameEng": "Curaçao",
+    "nameEsp": "Curazao",
+    "code": "CW",
+    "pathImg": "cw.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Danimarca",
+    "nameEng": "Denmark",
+    "nameEsp": "Dinamarca",
+    "code": "DK",
+    "pathImg": "dk.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Dominica",
+    "nameEng": "Dominica",
+    "nameEsp": "Dominica",
+    "code": "DM",
+    "pathImg": "dm.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Ecuador",
+    "nameEng": "Ecuador",
+    "nameEsp": "Ecuador",
+    "code": "EC",
+    "pathImg": "ec.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Egitto",
+    "nameEng": "Egypt",
+    "nameEsp": "Egipto",
+    "code": "EG",
+    "pathImg": "eg.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "El Salvador",
+    "nameEng": "El Salvador",
+    "nameEsp": "El Salvador",
+    "code": "SV",
+    "pathImg": "sv.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Emirati Arabi Uniti",
+    "nameEng": "United Arab Emirates",
+    "nameEsp": "Emiratos Árabes Unidos",
+    "code": "AE",
+    "pathImg": "ae.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Eritrea",
+    "nameEng": "Eritrea",
+    "nameEsp": "Eritrea",
+    "code": "ER",
+    "pathImg": "er.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Estonia",
+    "nameEng": "Estonia",
+    "nameEsp": "Estonia",
+    "code": "EE",
+    "pathImg": "ee.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Eswatini",
+    "nameEng": "Eswatini",
+    "nameEsp": "Esuatini",
+    "code": "SZ",
+    "pathImg": "sz.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Etiopia",
+    "nameEng": "Ethiopia",
+    "nameEsp": "Etiopía",
+    "code": "ET",
+    "pathImg": "et.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Figi",
+    "nameEng": "Fiji",
+    "nameEsp": "Fiyi",
+    "code": "FJ",
+    "pathImg": "fj.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Filippine",
+    "nameEng": "Philippines",
+    "nameEsp": "Filipinas",
+    "code": "PH",
+    "pathImg": "ph.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Finlandia",
+    "nameEng": "Finland",
+    "nameEsp": "Finlandia",
+    "code": "FI",
+    "pathImg": "fi.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Francia",
+    "nameEng": "France",
+    "nameEsp": "Francia",
+    "code": "FR",
+    "pathImg": "fr.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Gabon",
+    "nameEng": "Gabon",
+    "nameEsp": "Gabón",
+    "code": "GA",
+    "pathImg": "ga.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Galles",
+    "nameEng": "Wales",
+    "nameEsp": "Gales",
+    "code": "GB-WLS",
+    "pathImg": "gb_wls.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Gambia",
+    "nameEng": "Gambia",
+    "nameEsp": "Gambia",
+    "code": "GM",
+    "pathImg": "gm.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Georgia",
+    "nameEng": "Georgia",
+    "nameEsp": "Georgia",
+    "code": "GE",
+    "pathImg": "ge.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Georgia del Sud e Sandwich Australi",
+    "nameEng": "South Georgia & South Sandwich Islands",
+    "nameEsp": "Islas Georgia del Sur y Sandwich del Sur",
+    "code": "GS",
+    "pathImg": "gs.png",
+    "region": "an"
+  },
+  {
+    "nameIta": "Germania",
+    "nameEng": "Germany",
+    "nameEsp": "Alemania",
+    "code": "DE",
+    "pathImg": "de.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Ghana",
+    "nameEng": "Ghana",
+    "nameEsp": "Ghana",
+    "code": "GH",
+    "pathImg": "gh.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Giamaica",
+    "nameEng": "Jamaica",
+    "nameEsp": "Jamaica",
+    "code": "JM",
+    "pathImg": "jm.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Giappone",
+    "nameEng": "Japan",
+    "nameEsp": "Japón",
+    "code": "JP",
+    "pathImg": "jp.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Gibilterra",
+    "nameEng": "Gibraltar",
+    "nameEsp": "Gibraltar",
+    "code": "GI",
+    "pathImg": "gi.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Gibuti",
+    "nameEng": "Djibouti",
+    "nameEsp": "Yibuti",
+    "code": "DJ",
+    "pathImg": "dj.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Giordania",
+    "nameEng": "Jordan",
+    "nameEsp": "Jordania",
+    "code": "JO",
+    "pathImg": "jo.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Grecia",
+    "nameEng": "Greece",
+    "nameEsp": "Grecia",
+    "code": "GR",
+    "pathImg": "gr.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Grenada",
+    "nameEng": "Grenada",
+    "nameEsp": "Granada",
+    "code": "GD",
+    "pathImg": "gd.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Groenlandia",
+    "nameEng": "Greenland",
+    "nameEsp": "Groenlandia",
+    "code": "GL",
+    "pathImg": "gl.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Guadalupa",
+    "nameEng": "Guadeloupe",
+    "nameEsp": "Guadalupe",
+    "code": "GP",
+    "pathImg": "gp.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Guam",
+    "nameEng": "Guam",
+    "nameEsp": "Guam",
+    "code": "GU",
+    "pathImg": "gu.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Guatemala",
+    "nameEng": "Guatemala",
+    "nameEsp": "Guatemala",
+    "code": "GT",
+    "pathImg": "gt.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Guernsey",
+    "nameEng": "Guernsey",
+    "nameEsp": "Guernesey",
+    "code": "GG",
+    "pathImg": "gg.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Guinea",
+    "nameEng": "Guinea",
+    "nameEsp": "Guinea",
+    "code": "GN",
+    "pathImg": "gn.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Guinea Equatoriale",
+    "nameEng": "Equatorial Guinea",
+    "nameEsp": "Guinea Ecuatorial",
+    "code": "GQ",
+    "pathImg": "gq.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Guinea-Bissau",
+    "nameEng": "Guinea-Bissau",
+    "nameEsp": "Guinea-Bisáu",
+    "code": "GW",
+    "pathImg": "gw.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Guyana",
+    "nameEng": "Guyana",
+    "nameEsp": "Guyana",
+    "code": "GY",
+    "pathImg": "gy.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Guyana Francese",
+    "nameEng": "French Guiana",
+    "nameEsp": "Guayana Francesa",
+    "code": "GF",
+    "pathImg": "gf.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Haiti",
+    "nameEng": "Haiti",
+    "nameEsp": "Haití",
+    "code": "HT",
+    "pathImg": "ht.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Honduras",
+    "nameEng": "Honduras",
+    "nameEsp": "Honduras",
+    "code": "HN",
+    "pathImg": "hn.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "India",
+    "nameEng": "India",
+    "nameEsp": "India",
+    "code": "IN",
+    "pathImg": "in.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Indonesia",
+    "nameEng": "Indonesia",
+    "nameEsp": "Indonesia",
+    "code": "ID",
+    "pathImg": "id.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Inghilterra",
+    "nameEng": "England",
+    "nameEsp": "Inglaterra",
+    "code": "GB-ENG",
+    "pathImg": "gb_eng.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Iran",
+    "nameEng": "Iran",
+    "nameEsp": "Irán",
+    "code": "IR",
+    "pathImg": "ir.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Iraq",
+    "nameEng": "Iraq",
+    "nameEsp": "Irak",
+    "code": "IQ",
+    "pathImg": "iq.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Irlanda",
+    "nameEng": "Ireland",
+    "nameEsp": "Irlanda",
+    "code": "IE",
+    "pathImg": "ie.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Irlanda del Nord",
+    "nameEng": "Northern Ireland",
+    "nameEsp": "Irlanda del Norte",
+    "code": "GB-NIR",
+    "pathImg": "gb_nir.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Islanda",
+    "nameEng": "Iceland",
+    "nameEsp": "Islandia",
+    "code": "IS",
+    "pathImg": "is.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Isola Bouvet",
+    "nameEng": "Bouvet Island",
+    "nameEsp": "Isla Bouvet",
+    "code": "BV",
+    "pathImg": "bv.png",
+    "region": "an"
+  },
+  {
+    "nameIta": "Isola Christmas",
+    "nameEng": "Christmas Island",
+    "nameEsp": "Isla de Navidad",
+    "code": "CX",
+    "pathImg": "cx.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Isola Norfolk",
+    "nameEng": "Norfolk Island",
+    "nameEsp": "Isla Norfolk",
+    "code": "NF",
+    "pathImg": "nf.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Isola di Man",
+    "nameEng": "Isle of Man",
+    "nameEsp": "Isla de Man",
+    "code": "IM",
+    "pathImg": "im.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Isole Cayman",
+    "nameEng": "Cayman Islands",
+    "nameEsp": "Islas Caimán",
+    "code": "KY",
+    "pathImg": "ky.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Isole Cocos (Keeling)",
+    "nameEng": "Cocos (Keeling) Islands",
+    "nameEsp": "Islas Cocos",
+    "code": "CC",
+    "pathImg": "cc.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Isole Cook",
+    "nameEng": "Cook Islands",
+    "nameEsp": "Islas Cook",
+    "code": "CK",
+    "pathImg": "ck.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Isole Falkland",
+    "nameEng": "Falkland Islands",
+    "nameEsp": "Islas Malvinas",
+    "code": "FK",
+    "pathImg": "fk.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Isole Fær Øer",
+    "nameEng": "Faroe Islands",
+    "nameEsp": "Islas Feroe",
+    "code": "FO",
+    "pathImg": "fo.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Isole Heard e McDonald",
+    "nameEng": "Heard & McDonald Islands",
+    "nameEsp": "Islas Heard y McDonald",
+    "code": "HM",
+    "pathImg": "hm.png",
+    "region": "an"
+  },
+  {
+    "nameIta": "Isole Marianne Settentrionali",
+    "nameEng": "Northern Mariana Islands",
+    "nameEsp": "Islas Marianas del Norte",
+    "code": "MP",
+    "pathImg": "mp.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Isole Marshall",
+    "nameEng": "Marshall Islands",
+    "nameEsp": "Islas Marshall",
+    "code": "MH",
+    "pathImg": "mh.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Isole Minori Esterne degli Stati Uniti",
+    "nameEng": "U.S. Outlying Islands",
+    "nameEsp": "Islas menores alejadas de EE. UU.",
+    "code": "UM",
+    "pathImg": "um.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Isole Pitcairn",
+    "nameEng": "Pitcairn Islands",
+    "nameEsp": "Islas Pitcairn",
+    "code": "PN",
+    "pathImg": "pn.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Isole Salomone",
+    "nameEng": "Solomon Islands",
+    "nameEsp": "Islas Salomón",
+    "code": "SB",
+    "pathImg": "sb.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Isole Turks e Caicos",
+    "nameEng": "Turks & Caicos Islands",
+    "nameEsp": "Islas Turcas y Caicos",
+    "code": "TC",
+    "pathImg": "tc.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Isole Vergini Americane",
+    "nameEng": "U.S. Virgin Islands",
+    "nameEsp": "Islas Vírgenes de EE. UU.",
+    "code": "VI",
+    "pathImg": "vi.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Isole Vergini Britanniche",
+    "nameEng": "British Virgin Islands",
+    "nameEsp": "Islas Vírgenes Británicas",
+    "code": "VG",
+    "pathImg": "vg.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Isole Åland",
+    "nameEng": "Åland Islands",
+    "nameEsp": "Islas Aland",
+    "code": "AX",
+    "pathImg": "ax.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Israele",
+    "nameEng": "Israel",
+    "nameEsp": "Israel",
+    "code": "IL",
+    "pathImg": "il.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Italia",
+    "nameEng": "Italy",
+    "nameEsp": "Italia",
+    "code": "IT",
+    "pathImg": "it.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Jersey",
+    "nameEng": "Jersey",
+    "nameEsp": "Jersey",
+    "code": "JE",
+    "pathImg": "je.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Kazakistan",
+    "nameEng": "Kazakhstan",
+    "nameEsp": "Kazajistán",
+    "code": "KZ",
+    "pathImg": "kz.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Kenya",
+    "nameEng": "Kenya",
+    "nameEsp": "Kenia",
+    "code": "KE",
+    "pathImg": "ke.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Kirghizistan",
+    "nameEng": "Kyrgyzstan",
+    "nameEsp": "Kirguistán",
+    "code": "KG",
+    "pathImg": "kg.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Kiribati",
+    "nameEng": "Kiribati",
+    "nameEsp": "Kiribati",
+    "code": "KI",
+    "pathImg": "ki.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Kosovo",
+    "nameEng": "Kosovo",
+    "nameEsp": "Kosovo",
+    "code": "XK",
+    "pathImg": "xk.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Kuwait",
+    "nameEng": "Kuwait",
+    "nameEsp": "Kuwait",
+    "code": "KW",
+    "pathImg": "kw.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Laos",
+    "nameEng": "Laos",
+    "nameEsp": "Laos",
+    "code": "LA",
+    "pathImg": "la.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Lesotho",
+    "nameEng": "Lesotho",
+    "nameEsp": "Lesoto",
+    "code": "LS",
+    "pathImg": "ls.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Lettonia",
+    "nameEng": "Latvia",
+    "nameEsp": "Letonia",
+    "code": "LV",
+    "pathImg": "lv.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Libano",
+    "nameEng": "Lebanon",
+    "nameEsp": "Líbano",
+    "code": "LB",
+    "pathImg": "lb.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Liberia",
+    "nameEng": "Liberia",
+    "nameEsp": "Liberia",
+    "code": "LR",
+    "pathImg": "lr.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Libia",
+    "nameEng": "Libya",
+    "nameEsp": "Libia",
+    "code": "LY",
+    "pathImg": "ly.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Liechtenstein",
+    "nameEng": "Liechtenstein",
+    "nameEsp": "Liechtenstein",
+    "code": "LI",
+    "pathImg": "li.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Lituania",
+    "nameEng": "Lithuania",
+    "nameEsp": "Lituania",
+    "code": "LT",
+    "pathImg": "lt.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Lussemburgo",
+    "nameEng": "Luxembourg",
+    "nameEsp": "Luxemburgo",
+    "code": "LU",
+    "pathImg": "lu.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Macedonia del Nord",
+    "nameEng": "North Macedonia",
+    "nameEsp": "Macedonia del Norte",
+    "code": "MK",
+    "pathImg": "mk.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Madagascar",
+    "nameEng": "Madagascar",
+    "nameEsp": "Madagascar",
+    "code": "MG",
+    "pathImg": "mg.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Malawi",
+    "nameEng": "Malawi",
+    "nameEsp": "Malaui",
+    "code": "MW",
+    "pathImg": "mw.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Malaysia",
+    "nameEng": "Malaysia",
+    "nameEsp": "Malasia",
+    "code": "MY",
+    "pathImg": "my.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Maldive",
+    "nameEng": "Maldives",
+    "nameEsp": "Maldivas",
+    "code": "MV",
+    "pathImg": "mv.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Mali",
+    "nameEng": "Mali",
+    "nameEsp": "Mali",
+    "code": "ML",
+    "pathImg": "ml.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Malta",
+    "nameEng": "Malta",
+    "nameEsp": "Malta",
+    "code": "MT",
+    "pathImg": "mt.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Marocco",
+    "nameEng": "Morocco",
+    "nameEsp": "Marruecos",
+    "code": "MA",
+    "pathImg": "ma.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Martinica",
+    "nameEng": "Martinique",
+    "nameEsp": "Martinica",
+    "code": "MQ",
+    "pathImg": "mq.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Mauritania",
+    "nameEng": "Mauritania",
+    "nameEsp": "Mauritania",
+    "code": "MR",
+    "pathImg": "mr.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Mauritius",
+    "nameEng": "Mauritius",
+    "nameEsp": "Mauricio",
+    "code": "MU",
+    "pathImg": "mu.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Mayotte",
+    "nameEng": "Mayotte",
+    "nameEsp": "Mayotte",
+    "code": "YT",
+    "pathImg": "yt.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Messico",
+    "nameEng": "Mexico",
+    "nameEsp": "México",
+    "code": "MX",
+    "pathImg": "mx.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Micronesia",
+    "nameEng": "Micronesia",
+    "nameEsp": "Micronesia",
+    "code": "FM",
+    "pathImg": "fm.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Moldavia",
+    "nameEng": "Moldova",
+    "nameEsp": "Moldavia",
+    "code": "MD",
+    "pathImg": "md.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Monaco",
+    "nameEng": "Monaco",
+    "nameEsp": "Mónaco",
+    "code": "MC",
+    "pathImg": "mc.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Mongolia",
+    "nameEng": "Mongolia",
+    "nameEsp": "Mongolia",
+    "code": "MN",
+    "pathImg": "mn.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Montenegro",
+    "nameEng": "Montenegro",
+    "nameEsp": "Montenegro",
+    "code": "ME",
+    "pathImg": "me.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Montserrat",
+    "nameEng": "Montserrat",
+    "nameEsp": "Montserrat",
+    "code": "MS",
+    "pathImg": "ms.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Mozambico",
+    "nameEng": "Mozambique",
+    "nameEsp": "Mozambique",
+    "code": "MZ",
+    "pathImg": "mz.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Myanmar (Birmania)",
+    "nameEng": "Myanmar (Burma)",
+    "nameEsp": "Myanmar (Birmania)",
+    "code": "MM",
+    "pathImg": "mm.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Namibia",
+    "nameEng": "Namibia",
+    "nameEsp": "Namibia",
+    "code": "NA",
+    "pathImg": "na.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Nauru",
+    "nameEng": "Nauru",
+    "nameEsp": "Nauru",
+    "code": "NR",
+    "pathImg": "nr.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Nepal",
+    "nameEng": "Nepal",
+    "nameEsp": "Nepal",
+    "code": "NP",
+    "pathImg": "np.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Nicaragua",
+    "nameEng": "Nicaragua",
+    "nameEsp": "Nicaragua",
+    "code": "NI",
+    "pathImg": "ni.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Niger",
+    "nameEng": "Niger",
+    "nameEsp": "Níger",
+    "code": "NE",
+    "pathImg": "ne.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Nigeria",
+    "nameEng": "Nigeria",
+    "nameEsp": "Nigeria",
+    "code": "NG",
+    "pathImg": "ng.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Niue",
+    "nameEng": "Niue",
+    "nameEsp": "Niue",
+    "code": "NU",
+    "pathImg": "nu.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Norvegia",
+    "nameEng": "Norway",
+    "nameEsp": "Noruega",
+    "code": "NO",
+    "pathImg": "no.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Nuova Caledonia",
+    "nameEng": "New Caledonia",
+    "nameEsp": "Nueva Caledonia",
+    "code": "NC",
+    "pathImg": "nc.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Nuova Zelanda",
+    "nameEng": "New Zealand",
+    "nameEsp": "Nueva Zelanda",
+    "code": "NZ",
+    "pathImg": "nz.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Oman",
+    "nameEng": "Oman",
+    "nameEsp": "Omán",
+    "code": "OM",
+    "pathImg": "om.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Paesi Bassi",
+    "nameEng": "Netherlands",
+    "nameEsp": "Países Bajos",
+    "code": "NL",
+    "pathImg": "nl.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Pakistan",
+    "nameEng": "Pakistan",
+    "nameEsp": "Pakistán",
+    "code": "PK",
+    "pathImg": "pk.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Palau",
+    "nameEng": "Palau",
+    "nameEsp": "Palaos",
+    "code": "PW",
+    "pathImg": "pw.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Panama",
+    "nameEng": "Panama",
+    "nameEsp": "Panamá",
+    "code": "PA",
+    "pathImg": "pa.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Papua Nuova Guinea",
+    "nameEng": "Papua New Guinea",
+    "nameEsp": "Papúa Nueva Guinea",
+    "code": "PG",
+    "pathImg": "pg.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Paraguay",
+    "nameEng": "Paraguay",
+    "nameEsp": "Paraguay",
+    "code": "PY",
+    "pathImg": "py.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Perù",
+    "nameEng": "Peru",
+    "nameEsp": "Perú",
+    "code": "PE",
+    "pathImg": "pe.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Polinesia Francese",
+    "nameEng": "French Polynesia",
+    "nameEsp": "Polinesia Francesa",
+    "code": "PF",
+    "pathImg": "pf.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Polonia",
+    "nameEng": "Poland",
+    "nameEsp": "Polonia",
+    "code": "PL",
+    "pathImg": "pl.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Portogallo",
+    "nameEng": "Portugal",
+    "nameEsp": "Portugal",
+    "code": "PT",
+    "pathImg": "pt.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Portorico",
+    "nameEng": "Puerto Rico",
+    "nameEsp": "Puerto Rico",
+    "code": "PR",
+    "pathImg": "pr.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Qatar",
+    "nameEng": "Qatar",
+    "nameEsp": "Catar",
+    "code": "QA",
+    "pathImg": "qa.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "RAS di Hong Kong",
+    "nameEng": "Hong Kong SAR China",
+    "nameEsp": "RAE de Hong Kong (China)",
+    "code": "HK",
+    "pathImg": "hk.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "RAS di Macao",
+    "nameEng": "Macao SAR China",
+    "nameEsp": "RAE de Macao (China)",
+    "code": "MO",
+    "pathImg": "mo.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Regno Unito",
+    "nameEng": "United Kingdom",
+    "nameEsp": "Reino Unido",
+    "code": "GB",
+    "pathImg": "gb.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Repubblica Centrafricana",
+    "nameEng": "Central African Republic",
+    "nameEsp": "República Centroafricana",
+    "code": "CF",
+    "pathImg": "cf.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Repubblica Dominicana",
+    "nameEng": "Dominican Republic",
+    "nameEsp": "República Dominicana",
+    "code": "DO",
+    "pathImg": "flags_do.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Riunione",
+    "nameEng": "Réunion",
+    "nameEsp": "Reunión",
+    "code": "RE",
+    "pathImg": "re.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Romania",
+    "nameEng": "Romania",
+    "nameEsp": "Rumanía",
+    "code": "RO",
+    "pathImg": "ro.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Ruanda",
+    "nameEng": "Rwanda",
+    "nameEsp": "Ruanda",
+    "code": "RW",
+    "pathImg": "rw.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Russia",
+    "nameEng": "Russia",
+    "nameEsp": "Rusia",
+    "code": "RU",
+    "pathImg": "ru.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Sahara Occidentale",
+    "nameEng": "Western Sahara",
+    "nameEsp": "Sáhara Occidental",
+    "code": "EH",
+    "pathImg": "eh.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Saint Kitts e Nevis",
+    "nameEng": "St. Kitts & Nevis",
+    "nameEsp": "San Cristóbal y Nieves",
+    "code": "KN",
+    "pathImg": "kn.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Saint Lucia",
+    "nameEng": "St. Lucia",
+    "nameEsp": "Santa Lucía",
+    "code": "LC",
+    "pathImg": "lc.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Saint Martin",
+    "nameEng": "St. Martin",
+    "nameEsp": "San Martín",
+    "code": "MF",
+    "pathImg": "mf.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Saint Vincent e Grenadine",
+    "nameEng": "St. Vincent & Grenadines",
+    "nameEsp": "San Vicente y las Granadinas",
+    "code": "VC",
+    "pathImg": "vc.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Saint-Barthélemy",
+    "nameEng": "St. Barthélemy",
+    "nameEsp": "San Bartolomé",
+    "code": "BL",
+    "pathImg": "bl.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Saint-Pierre e Miquelon",
+    "nameEng": "St. Pierre & Miquelon",
+    "nameEsp": "San Pedro y Miquelón",
+    "code": "PM",
+    "pathImg": "pm.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Samoa",
+    "nameEng": "Samoa",
+    "nameEsp": "Samoa",
+    "code": "WS",
+    "pathImg": "ws.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Samoa Americane",
+    "nameEng": "American Samoa",
+    "nameEsp": "Samoa Americana",
+    "code": "AS",
+    "pathImg": "as.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "San Marino",
+    "nameEng": "San Marino",
+    "nameEsp": "San Marino",
+    "code": "SM",
+    "pathImg": "sm.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Sant’Elena",
+    "nameEng": "St. Helena",
+    "nameEsp": "Santa Elena",
+    "code": "SH",
+    "pathImg": "sh.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Scozia",
+    "nameEng": "Scotland",
+    "nameEsp": "Escocia",
+    "code": "GB-SCT",
+    "pathImg": "gb_sct.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Senegal",
+    "nameEng": "Senegal",
+    "nameEsp": "Senegal",
+    "code": "SN",
+    "pathImg": "sn.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Serbia",
+    "nameEng": "Serbia",
+    "nameEsp": "Serbia",
+    "code": "RS",
+    "pathImg": "rs.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Seychelles",
+    "nameEng": "Seychelles",
+    "nameEsp": "Seychelles",
+    "code": "SC",
+    "pathImg": "sc.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Sierra Leone",
+    "nameEng": "Sierra Leone",
+    "nameEsp": "Sierra Leona",
+    "code": "SL",
+    "pathImg": "sl.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Singapore",
+    "nameEng": "Singapore",
+    "nameEsp": "Singapur",
+    "code": "SG",
+    "pathImg": "sg.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Sint Maarten",
+    "nameEng": "Sint Maarten",
+    "nameEsp": "Sint Maarten",
+    "code": "SX",
+    "pathImg": "sx.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Siria",
+    "nameEng": "Syria",
+    "nameEsp": "Siria",
+    "code": "SY",
+    "pathImg": "sy.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Slovacchia",
+    "nameEng": "Slovakia",
+    "nameEsp": "Eslovaquia",
+    "code": "SK",
+    "pathImg": "sk.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Slovenia",
+    "nameEng": "Slovenia",
+    "nameEsp": "Eslovenia",
+    "code": "SI",
+    "pathImg": "si.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Somalia",
+    "nameEng": "Somalia",
+    "nameEsp": "Somalia",
+    "code": "SO",
+    "pathImg": "so.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Spagna",
+    "nameEng": "Spain",
+    "nameEsp": "España",
+    "code": "ES",
+    "pathImg": "es.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Sri Lanka",
+    "nameEng": "Sri Lanka",
+    "nameEsp": "Sri Lanka",
+    "code": "LK",
+    "pathImg": "lk.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Stati Uniti",
+    "nameEng": "United States",
+    "nameEsp": "Estados Unidos",
+    "code": "US",
+    "pathImg": "us.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Sud Sudan",
+    "nameEng": "South Sudan",
+    "nameEsp": "Sudán del Sur",
+    "code": "SS",
+    "pathImg": "ss.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Sudafrica",
+    "nameEng": "South Africa",
+    "nameEsp": "Sudáfrica",
+    "code": "ZA",
+    "pathImg": "za.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Sudan",
+    "nameEng": "Sudan",
+    "nameEsp": "Sudán",
+    "code": "SD",
+    "pathImg": "sd.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Suriname",
+    "nameEng": "Suriname",
+    "nameEsp": "Surinam",
+    "code": "SR",
+    "pathImg": "sr.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Svalbard e Jan Mayen",
+    "nameEng": "Svalbard & Jan Mayen",
+    "nameEsp": "Svalbard y Jan Mayen",
+    "code": "SJ",
+    "pathImg": "sj.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Svezia",
+    "nameEng": "Sweden",
+    "nameEsp": "Suecia",
+    "code": "SE",
+    "pathImg": "se.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Svizzera",
+    "nameEng": "Switzerland",
+    "nameEsp": "Suiza",
+    "code": "CH",
+    "pathImg": "ch.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "São Tomé e Príncipe",
+    "nameEng": "São Tomé & Príncipe",
+    "nameEsp": "Santo Tomé y Príncipe",
+    "code": "ST",
+    "pathImg": "st.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Tagikistan",
+    "nameEng": "Tajikistan",
+    "nameEsp": "Tayikistán",
+    "code": "TJ",
+    "pathImg": "tj.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Taiwan",
+    "nameEng": "Taiwan",
+    "nameEsp": "Taiwán",
+    "code": "TW",
+    "pathImg": "tw.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Tanzania",
+    "nameEng": "Tanzania",
+    "nameEsp": "Tanzania",
+    "code": "TZ",
+    "pathImg": "tz.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Terre Australi Francesi",
+    "nameEng": "French Southern Territories",
+    "nameEsp": "Territorios Australes Franceses",
+    "code": "TF",
+    "pathImg": "tf.png",
+    "region": "an"
+  },
+  {
+    "nameIta": "Territori Palestinesi",
+    "nameEng": "Palestinian Territories",
+    "nameEsp": "Territorios Palestinos",
+    "code": "PS",
+    "pathImg": "ps.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Territorio Britannico dell’Oceano Indiano",
+    "nameEng": "British Indian Ocean Territory",
+    "nameEsp": "Territorio Británico del Océano Índico",
+    "code": "IO",
+    "pathImg": "io.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Thailandia",
+    "nameEng": "Thailand",
+    "nameEsp": "Tailandia",
+    "code": "TH",
+    "pathImg": "th.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Timor Est",
+    "nameEng": "Timor-Leste",
+    "nameEsp": "Timor-Leste",
+    "code": "TL",
+    "pathImg": "tl.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Togo",
+    "nameEng": "Togo",
+    "nameEsp": "Togo",
+    "code": "TG",
+    "pathImg": "tg.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Tokelau",
+    "nameEng": "Tokelau",
+    "nameEsp": "Tokelau",
+    "code": "TK",
+    "pathImg": "tk.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Tonga",
+    "nameEng": "Tonga",
+    "nameEsp": "Tonga",
+    "code": "TO",
+    "pathImg": "to.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Trinidad e Tobago",
+    "nameEng": "Trinidad & Tobago",
+    "nameEsp": "Trinidad y Tobago",
+    "code": "TT",
+    "pathImg": "tt.png",
+    "region": "na"
+  },
+  {
+    "nameIta": "Tunisia",
+    "nameEng": "Tunisia",
+    "nameEsp": "Túnez",
+    "code": "TN",
+    "pathImg": "tn.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Turchia",
+    "nameEng": "Türkiye",
+    "nameEsp": "Turquía",
+    "code": "TR",
+    "pathImg": "tr.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Turkmenistan",
+    "nameEng": "Turkmenistan",
+    "nameEsp": "Turkmenistán",
+    "code": "TM",
+    "pathImg": "tm.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Tuvalu",
+    "nameEng": "Tuvalu",
+    "nameEsp": "Tuvalu",
+    "code": "TV",
+    "pathImg": "tv.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Ucraina",
+    "nameEng": "Ukraine",
+    "nameEsp": "Ucrania",
+    "code": "UA",
+    "pathImg": "ua.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Uganda",
+    "nameEng": "Uganda",
+    "nameEsp": "Uganda",
+    "code": "UG",
+    "pathImg": "ug.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Ungheria",
+    "nameEng": "Hungary",
+    "nameEsp": "Hungría",
+    "code": "HU",
+    "pathImg": "hu.png",
+    "region": "eu"
+  },
+  {
+    "nameIta": "Uruguay",
+    "nameEng": "Uruguay",
+    "nameEsp": "Uruguay",
+    "code": "UY",
+    "pathImg": "uy.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Uzbekistan",
+    "nameEng": "Uzbekistan",
+    "nameEsp": "Uzbekistán",
+    "code": "UZ",
+    "pathImg": "uz.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Vanuatu",
+    "nameEng": "Vanuatu",
+    "nameEsp": "Vanuatu",
+    "code": "VU",
+    "pathImg": "vu.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Venezuela",
+    "nameEng": "Venezuela",
+    "nameEsp": "Venezuela",
+    "code": "VE",
+    "pathImg": "ve.png",
+    "region": "sa"
+  },
+  {
+    "nameIta": "Vietnam",
+    "nameEng": "Vietnam",
+    "nameEsp": "Vietnam",
+    "code": "VN",
+    "pathImg": "vn.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Wallis e Futuna",
+    "nameEng": "Wallis & Futuna",
+    "nameEsp": "Wallis y Futuna",
+    "code": "WF",
+    "pathImg": "wf.png",
+    "region": "oc"
+  },
+  {
+    "nameIta": "Yemen",
+    "nameEng": "Yemen",
+    "nameEsp": "Yemen",
+    "code": "YE",
+    "pathImg": "ye.png",
+    "region": "as"
+  },
+  {
+    "nameIta": "Zambia",
+    "nameEng": "Zambia",
+    "nameEsp": "Zambia",
+    "code": "ZM",
+    "pathImg": "zm.png",
+    "region": "af"
+  },
+  {
+    "nameIta": "Zimbabwe",
+    "nameEng": "Zimbabwe",
+    "nameEsp": "Zimbabue",
+    "code": "ZW",
+    "pathImg": "zw.png",
+    "region": "af"
+  }
+]
