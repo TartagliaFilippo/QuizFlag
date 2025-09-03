@@ -93,12 +93,6 @@ fun GameScreen(
                     verticalArrangement = Arrangement.SpaceEvenly,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    // Image(
-                    //     modifier = Modifier.fillMaxSize(),
-                    //     painter = painterResource(id = R.drawable.background_green),
-                    //     contentDescription = null,
-                    //     contentScale = ContentScale.Crop
-                    // )
                     Box(
                         modifier = Modifier
                             .fillMaxHeight(0.5f)
