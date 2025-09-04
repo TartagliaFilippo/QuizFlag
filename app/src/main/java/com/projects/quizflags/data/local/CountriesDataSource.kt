@@ -14,11 +14,14 @@ import kotlinx.serialization.json.Json
 class CountriesDataSource @Inject constructor(
     @ApplicationContext private val context: Context
 ) {
+
+    private val json = Json {
+        ignoreUnknownKeys = true
+    }
+
     suspend fun loadCountries(): List<Country> = withContext(Dispatchers.IO) {
         val inputStream = context.resources.openRawResource(R.raw.countries)
-        val json = inputStream.bufferedReader().use { it.readText() }
-        Json {
-            ignoreUnknownKeys = true
-        }.decodeFromString<List<Country>>(json)
+        val jsonString = inputStream.bufferedReader().use { it.readText() }
+        json.decodeFromString<List<Country>>(jsonString)
     }
 }
