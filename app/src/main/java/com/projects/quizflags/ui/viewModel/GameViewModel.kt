@@ -4,9 +4,9 @@ import android.content.Context
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.projects.quizflags.R
-import com.projects.quizflags.data.model.Country
-import com.projects.quizflags.data.model.GameMode
-import com.projects.quizflags.data.model.QuizQuestion
+import com.projects.quizflags.domain.model.Country
+import com.projects.quizflags.domain.model.GameMode
+import com.projects.quizflags.domain.model.QuizQuestion
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow

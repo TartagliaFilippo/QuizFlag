@@ -1,4 +1,4 @@
-package com.projects.quizflags.data.model
+package com.projects.quizflags.domain.model
 
 import androidx.annotation.StringRes
 

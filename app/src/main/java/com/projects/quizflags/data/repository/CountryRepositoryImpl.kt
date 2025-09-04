@@ -2,8 +2,8 @@ package com.projects.quizflags.data.repository
 
 import android.content.Context
 import com.projects.quizflags.data.local.CountriesDataSource
-import com.projects.quizflags.data.model.Country
-import com.projects.quizflags.domain.CountryRepository
+import com.projects.quizflags.domain.model.Country
+import com.projects.quizflags.domain.repository.CountryRepository
 import dagger.hilt.android.qualifiers.ApplicationContext
 import jakarta.inject.Inject
 import jakarta.inject.Singleton

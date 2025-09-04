@@ -15,8 +15,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.projects.quizflags.R
-import com.projects.quizflags.data.model.GameMode
-import com.projects.quizflags.data.model.GamesRoute
+import com.projects.quizflags.domain.model.GameMode
+import com.projects.quizflags.domain.model.GamesRoute
 import com.projects.quizflags.ui.responsive.DeviceType
 import com.projects.quizflags.ui.responsive.calculateWindowSize
 import com.projects.quizflags.ui.responsive.toDeviceType

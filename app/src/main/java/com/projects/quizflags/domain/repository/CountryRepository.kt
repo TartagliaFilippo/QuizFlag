@@ -1,6 +1,6 @@
-package com.projects.quizflags.domain
+package com.projects.quizflags.domain.repository
 
-import com.projects.quizflags.data.model.Country
+import com.projects.quizflags.domain.model.Country
 
 interface CountryRepository {
     suspend fun getAllCountries(): List<Country>

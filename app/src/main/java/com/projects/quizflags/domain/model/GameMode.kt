@@ -1,4 +1,4 @@
-package com.projects.quizflags.data.model
+package com.projects.quizflags.domain.model
 
 sealed class GameMode (val route: String) {
     object ClassicGame : GameMode("classic_game")

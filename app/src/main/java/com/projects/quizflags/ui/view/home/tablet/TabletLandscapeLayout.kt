@@ -16,7 +16,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.projects.quizflags.R
-import com.projects.quizflags.data.model.GamesRoute
+import com.projects.quizflags.domain.model.GamesRoute
 import com.projects.quizflags.ui.components.ModeButtonLandscape
 
 @Composable

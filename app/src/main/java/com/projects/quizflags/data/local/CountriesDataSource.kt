@@ -1,7 +1,7 @@
 package com.projects.quizflags.data.local
 
 import android.content.Context
-import com.projects.quizflags.data.model.Country
+import com.projects.quizflags.domain.model.Country
 import dagger.hilt.android.qualifiers.ApplicationContext
 import jakarta.inject.Inject
 import kotlinx.coroutines.Dispatchers

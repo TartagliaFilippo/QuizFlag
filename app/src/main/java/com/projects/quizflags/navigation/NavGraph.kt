@@ -5,7 +5,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.projects.quizflags.data.model.GameMode
+import com.projects.quizflags.domain.model.GameMode
 import com.projects.quizflags.ui.view.EndGameScreen
 import com.projects.quizflags.ui.view.GameScreen
 import com.projects.quizflags.ui.view.HomeScreen

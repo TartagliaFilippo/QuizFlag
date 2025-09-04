@@ -2,8 +2,8 @@ package com.projects.quizflags.ui.viewModel
 
 import androidx.lifecycle.ViewModel
 import com.projects.quizflags.R
-import com.projects.quizflags.data.model.GameMode
-import com.projects.quizflags.data.model.GamesRoute
+import com.projects.quizflags.domain.model.GameMode
+import com.projects.quizflags.domain.model.GamesRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

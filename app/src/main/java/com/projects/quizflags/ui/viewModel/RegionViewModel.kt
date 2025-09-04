@@ -1,7 +1,7 @@
 package com.projects.quizflags.ui.viewModel
 
 import androidx.lifecycle.ViewModel
-import com.projects.quizflags.data.model.Region
+import com.projects.quizflags.domain.model.Region
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

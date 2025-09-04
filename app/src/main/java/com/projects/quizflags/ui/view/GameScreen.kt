@@ -30,7 +30,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.projects.quizflags.data.model.GameMode
+import com.projects.quizflags.domain.model.GameMode
 import com.projects.quizflags.ui.components.CountryButton
 import com.projects.quizflags.ui.viewModel.GameViewModel
 
