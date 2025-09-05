@@ -4,4 +4,12 @@
     <string name="game_classic">Classic</string>
     <string name="game_survival">Survival</string>
     <string name="game_region">Continent</string>
+
+    <string name="region_europe">Europe</string>
+    <string name="region_asia">Asia</string>
+    <string name="region_africa">Africa</string>
+    <string name="region_north_america">North America</string>
+    <string name="region_south_america">South America</string>
+    <string name="region_oceania">Oceania</string>
+    <string name="region_antarctica">Antarctica</string>
 </resources>
