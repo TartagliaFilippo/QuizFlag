@@ -2,7 +2,7 @@ package com.projects.quizflags
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.rememberNavController
-import com.projects.quizflags.navigation.NavGraph
+import com.projects.quizflags.presentation.navigation.NavGraph
 
 @Composable
 fun QuizApp() {

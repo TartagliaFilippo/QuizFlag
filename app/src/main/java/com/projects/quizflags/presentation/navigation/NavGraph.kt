@@ -1,4 +1,4 @@
-package com.projects.quizflags.navigation
+package com.projects.quizflags.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel
