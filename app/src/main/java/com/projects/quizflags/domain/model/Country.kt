@@ -10,6 +10,4 @@ data class Country(
     val code: String,
     val region: String,
     val pathImg: String
-) {
-    val flagResourceId: Int = 0
-}
+)
