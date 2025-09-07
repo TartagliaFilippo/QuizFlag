@@ -1,34 +1,28 @@
 package com.projects.quizflags.data.repository
 
 import android.content.Context
-import com.projects.quizflags.R
+import com.projects.quizflags.data.datasource.CountriesDataSource
 import com.projects.quizflags.domain.model.Country
 import com.projects.quizflags.domain.model.Region
-import com.projects.quizflags.domain.repository.CountryRepository
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import kotlinx.serialization.json.Json
+import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
 class CountryRepositoryImpl @Inject constructor(
-    private val context: Context,
-    private val json: Json = Json {
-        ignoreUnknownKeys = true
-        isLenient = true
-    }
+    private val countriesDataSource: CountriesDataSource,
+    @ApplicationContext private val context: Context
 ): CountryRepository {
     private var cachedCountries: List<Country>? = null
 
-    override suspend fun getAllCountries(): Result<List<Country>> = withContext(Dispatchers.IO) {
-        try {
-            if (cachedCountries == null) {
-                val inputStream = context.resources.openRawResource(R.raw.countries)
-                val jsonString = inputStream.bufferedReader().use { it.readText() }
-                cachedCountries = json.decodeFromString<List<Country>>(jsonString)
+    override suspend fun getAllCountries(): Result<List<Country>> {
+        return try {
+            val countries = cachedCountries ?: run {
+                val loadedCountries = countriesDataSource.loadCountries()
+                cachedCountries = loadedCountries
+                loadedCountries
             }
-            Result.success(cachedCountries!!)
+            Result.success(countries)
         } catch (e: Exception) {
             Result.failure(e)
         }
