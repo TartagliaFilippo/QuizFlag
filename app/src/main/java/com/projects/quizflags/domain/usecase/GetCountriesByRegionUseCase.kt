@@ -1,4 +1,4 @@
-package com.projects.quizflags.di
+package com.projects.quizflags.domain.usecase
 
 import com.projects.quizflags.domain.model.Country
 import com.projects.quizflags.domain.repository.CountryRepository
