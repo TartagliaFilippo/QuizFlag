@@ -1,6 +1,6 @@
 package com.projects.quizflags.di
 
-import com.projects.quizflags.data.datasource.CountriesDataSource
+import com.projects.quizflags.domain.datasource.CountriesDataSource
 import com.projects.quizflags.data.datasource.CountriesDataSourceImpl
 import dagger.Binds
 import dagger.Module

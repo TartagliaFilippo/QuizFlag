@@ -1,4 +1,4 @@
-package com.projects.quizflags.data.datasource
+package com.projects.quizflags.domain.datasource
 
 import com.projects.quizflags.domain.model.Country
 

@@ -1,7 +1,7 @@
 package com.projects.quizflags.domain.usecase
 
 import com.projects.quizflags.domain.model.Region
-import com.projects.quizflags.data.repository.CountryRepository
+import com.projects.quizflags.domain.repository.CountryRepository
 import javax.inject.Inject
 
 class GetRegionUseCase @Inject constructor(

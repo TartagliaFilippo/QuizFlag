@@ -1,4 +1,4 @@
-package com.projects.quizflags.data.repository
+package com.projects.quizflags.domain.repository
 
 import com.projects.quizflags.domain.model.Country
 import com.projects.quizflags.domain.model.Region
