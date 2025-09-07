@@ -4,10 +4,10 @@ import com.projects.quizflags.domain.model.Country
 import com.projects.quizflags.data.repository.CountryRepository
 import javax.inject.Inject
 
-class GetCountriesByRegionUseCase @Inject constructor(
+class GetAllCountriesUseCase @Inject constructor(
     private val repository: CountryRepository
 ) {
-    suspend operator fun invoke(regionCode: String): Result<List<Country>> {
-        return repository.getCountriesByRegion(regionCode)
+    suspend operator fun invoke(): Result<List<Country>> {
+        return repository.getAllCountries()
     }
 }
