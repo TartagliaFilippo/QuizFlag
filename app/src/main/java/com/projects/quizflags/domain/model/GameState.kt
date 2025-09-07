@@ -5,5 +5,6 @@ data class GameState(
     val score: Int = 0,
     val round: Int = 0,
     val isGameOver: Boolean = false,
-    val gameMode: GameMode? = null
+    val gameMode: GameMode? = null,
+    val totalQuestions: Int = 10
 )
