@@ -1,131 +1,129 @@
 package com.projects.quizflags.ui.viewModel
 
-import android.content.Context
-import android.util.Log
 import androidx.lifecycle.ViewModel
-import com.projects.quizflags.R
+import androidx.lifecycle.viewModelScope
 import com.projects.quizflags.domain.model.Country
 import com.projects.quizflags.domain.model.GameMode
 import com.projects.quizflags.domain.model.QuizQuestion
+import com.projects.quizflags.domain.repository.GameRepository
+import com.projects.quizflags.domain.usecase.GetNextQuestionUseCase
+import com.projects.quizflags.domain.usecase.StartGameUseCase
+import com.projects.quizflags.domain.usecase.SubmitAnswerUseCase
+import com.projects.quizflags.presentation.state.GameUiState
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.serialization.json.Json
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class GameViewModel @Inject constructor(
-    @ApplicationContext private val context: Context
+    private val startGameUseCase: StartGameUseCase,
+    private val submitAnswerUseCase: SubmitAnswerUseCase,
+    private val getNextQuestionUseCase: GetNextQuestionUseCase,
+    private val gameRepository: GameRepository
 ) : ViewModel() {
-    private val _countries = MutableStateFlow<List<Country>>(emptyList())
-    val countries: StateFlow<List<Country>> = _countries
+    private val _uiState = MutableStateFlow(GameUiState())
+    val uiState: StateFlow<GameUiState> = _uiState.asStateFlow()
 
-    private val _currentQuestion = MutableStateFlow<QuizQuestion?>(null)
-    val currentQuestion: StateFlow<QuizQuestion?> = _currentQuestion
-
-    // Turni di gioco
-    private val _round = MutableStateFlow(0)
-    val round: StateFlow<Int> = _round
-
-    // Punteggio
-    private val _score = MutableStateFlow(0)
-    val score: StateFlow<Int> = _score
-
-    private val _isGameOver = MutableStateFlow(false)
-    val isGameOver: StateFlow<Boolean> = _isGameOver
-
-    private var availableCountries: MutableList<Country> = mutableListOf()
-    private lateinit var gameMode: GameMode
-
-    init {
-        loadCountries()
-    }
-
-    private fun loadCountries() {
-        val inputStream = context.resources.openRawResource(R.raw.countries)
-        val json = inputStream.bufferedReader().use { it.readText() }
-
-        val parsed = Json {
-            ignoreUnknownKeys = true
-        }.decodeFromString<List<Country>>(json)
-
-        _countries.value = parsed
-    }
-
-    fun startGame(mode: GameMode) {
-        gameMode = mode
-        _round.value = 0
-        _score.value = 0
-
-        availableCountries = when (mode) {
-            is GameMode.ClassicGame -> countries.value.shuffled().take(10).toMutableList()
-            is GameMode.RegionGame -> countries.value.filter { it.region == mode.regionCode }.toMutableList()
-            is GameMode.SurvivalGame -> countries.value.toMutableList()
-        }
-
-        Log.d("GAME", "Modalità: $mode - Paesi trovati: ${availableCountries.size}")
-
-        generateNewQuestion()
-    }
-
-    fun generateNewQuestion() {
-        // Gestione dei 10 turni di gioco
-        if (availableCountries.isEmpty()) {
-            _isGameOver.value = true
-            _currentQuestion.value = null
-            Log.e("END GAME", "Finito le nazioni")
-            return
-        }
-
-        // Seleziono la risposta corretta
-        val correct = availableCountries.random()
-        Log.d("Risposta Corretta" ,correct.toString())
-        availableCountries.remove(correct)
-
-        // Seleziono le risposte sbagliate
-        val wrongs = _countries.value
-            .filter { it.code != correct.code }
-            .shuffled()
-            .take(3)
-
-        // Creo le varie opzioni del quiz
-        val options = (wrongs + correct).shuffled()
-
-        // Creo l'oggetto di gioco
-        _currentQuestion.value = QuizQuestion(
-            correctAnswer = correct,
-            options = options
+    val currentQuestion: StateFlow<QuizQuestion?> = _uiState
+        .map { it.gameState.currentQuestion }
+        .stateIn(
+            viewModelScope,
+            SharingStarted.Eagerly,
+            null
         )
 
-        // Gestisco il turno di gioco
-        _round.value += 1
+    val score: StateFlow<Int> = _uiState
+        .map { it.gameState.score }
+        .stateIn(
+            viewModelScope,
+            SharingStarted.Eagerly,
+            0
+        )
 
-        // Gestisco il fine partita
-        when (gameMode) {
-            is GameMode.ClassicGame -> if (_round.value > 10) _isGameOver.value = true
-            is GameMode.RegionGame -> if (availableCountries.isEmpty()) _isGameOver.value = true
-            is GameMode.SurvivalGame -> { /* già gestito in submitAnswer */ }
+    val round: StateFlow<Int> = _uiState
+        .map { it.gameState.round }
+        .stateIn(
+            viewModelScope,
+            SharingStarted.Eagerly,
+            0
+        )
+
+    val isGameOver: StateFlow<Boolean> = _uiState
+        .map { it.gameState.isGameOver }
+        .stateIn(
+            viewModelScope,
+            SharingStarted.Eagerly,
+            false
+        )
+
+    fun startGame(mode: GameMode) {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoading = true)
+
+            startGameUseCase(mode).fold(
+                onSuccess = { question ->
+                    val gameState = gameRepository.getCurrentGameState()
+                    _uiState.value = GameUiState(
+                        gameState = gameState,
+                        isLoading = false
+                    )
+                },
+                onFailure = { exception ->
+                    _uiState.value = _uiState.value.copy(
+                        isLoading = false,
+                        error = exception.message
+                    )
+                }
+            )
         }
     }
 
-    fun submitAnswer(selected: Country) {
-        val current = _currentQuestion.value ?: return
-        val isCorrect = selected.code == current.correctAnswer.code
+    fun submitAnswer(selectedCountry: Country) {
+        viewModelScope.launch {
+            submitAnswerUseCase(selectedCountry).fold(
+                onSuccess = { result ->
+                    _uiState.value = _uiState.value.copy(lastResult = result)
 
-        if (isCorrect) {
-            _score.value += 1
-        }
+                    // Delay per feedback
+                    delay(1500)
 
-        when (gameMode) {
-            is GameMode.SurvivalGame -> {
-                if (!isCorrect) {
-                    _isGameOver.value = true
-                } else {
-                    generateNewQuestion()
+                    if (!result.isCorrect && _uiState.value.gameState.gameMode is GameMode.SurvivalGame) {
+                        val gameState = gameRepository.getCurrentGameState()
+                        _uiState.value = _uiState.value.copy(gameState = gameState)
+                    } else {
+                        getNextQuestion()
+                    }
+                },
+                onFailure = { exception ->
+                    _uiState.value = _uiState.value.copy(error = exception.message)
                 }
-            }
-            else -> generateNewQuestion()
+            )
         }
+    }
+
+    private suspend fun getNextQuestion() {
+        getNextQuestionUseCase().fold(
+            onSuccess = { question ->
+                val gameState = gameRepository.getCurrentGameState()
+                _uiState.value = _uiState.value.copy(
+                    gameState = gameState,
+                    lastResult = null
+                )
+            },
+            onFailure = { exception ->
+                _uiState.value = _uiState.value.copy(error = exception.message)
+            }
+        )
+    }
+
+    fun clearError() {
+        _uiState.value = _uiState.value.copy(error = null)
     }
 }
