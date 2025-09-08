@@ -7,5 +7,7 @@ data class GameUiState(
     val gameState: GameState = GameState(),
     val isLoading: Boolean = false,
     val error: String? = null,
-    val lastResult: GameResult? = null
+    val lastResult: GameResult? = null,
+    val selectedAnswer: String? = null,
+    val showAnswerFeedback: Boolean = false
 )
