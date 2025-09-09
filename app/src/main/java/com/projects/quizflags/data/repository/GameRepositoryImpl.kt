@@ -112,9 +112,12 @@ class GameRepositoryImpl @Inject constructor(
 
             val options = (wrongAnswers + correctAnswer).shuffled()
 
+            val flagResourceId = countryRepository.getImageResourceId(correctAnswer.pathImg)
+
             val question = QuizQuestion(
                 correctAnswer = correctAnswer,
-                options = options
+                options = options,
+                flagResourceId = flagResourceId
             )
 
             gameState = gameState.copy(

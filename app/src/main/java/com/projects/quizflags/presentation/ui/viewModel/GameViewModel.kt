@@ -39,6 +39,16 @@ class GameViewModel @Inject constructor(
             null
         )
 
+    val currentFlagResourceId: StateFlow<Int> = _uiState
+        .map { state ->
+            state.gameState.currentQuestion?.flagResourceId ?: 0
+        }
+        .stateIn(
+            viewModelScope,
+            SharingStarted.Eagerly,
+            0
+        )
+
     val score: StateFlow<Int> = _uiState
         .map { it.gameState.score }
         .stateIn(
