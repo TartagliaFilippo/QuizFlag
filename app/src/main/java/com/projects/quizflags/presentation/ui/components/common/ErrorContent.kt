@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun ErrorContent(
     modifier: Modifier = Modifier,
-    error: String,
+    error: String?,
     onRetry: () -> Unit,
     onDismiss: () -> Unit
 ) {
@@ -65,7 +65,7 @@ fun ErrorContent(
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Text(
-                    text = error,
+                    text = error ?: "Errore sconosciuto",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurface,
                     textAlign = TextAlign.Center
