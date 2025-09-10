@@ -37,7 +37,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import com.projects.quizflags.domain.model.Region
 import com.projects.quizflags.presentation.state.RegionUiState
-import com.projects.quizflags.ui.viewModel.RegionViewModel
+import com.projects.quizflags.presentation.ui.screen.region.RegionViewModel
 
 @Composable
 fun RegionChoiceScreen(

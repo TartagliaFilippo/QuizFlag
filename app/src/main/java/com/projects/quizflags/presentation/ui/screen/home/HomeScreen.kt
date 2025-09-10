@@ -26,7 +26,7 @@ import com.projects.quizflags.ui.view.home.phone.PhoneLandscapeLayout
 import com.projects.quizflags.ui.view.home.phone.PhonePortraitLayout
 import com.projects.quizflags.ui.view.home.tablet.TabletLandscapeLayout
 import com.projects.quizflags.ui.view.home.tablet.TabletPortraitLayout
-import com.projects.quizflags.ui.viewModel.HomeViewModel
+import com.projects.quizflags.presentation.ui.screen.home.HomeViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 
 @Composable

@@ -1,4 +1,4 @@
-package com.projects.quizflags.ui.viewModel
+package com.projects.quizflags.presentation.ui.screen.game
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -35,7 +35,7 @@ class GameViewModel @Inject constructor(
         .map { it.gameState.currentQuestion }
         .stateIn(
             viewModelScope,
-            SharingStarted.Eagerly,
+            SharingStarted.Companion.Eagerly,
             null
         )
 
@@ -45,7 +45,7 @@ class GameViewModel @Inject constructor(
         }
         .stateIn(
             viewModelScope,
-            SharingStarted.Eagerly,
+            SharingStarted.Companion.Eagerly,
             0
         )
 
@@ -53,7 +53,7 @@ class GameViewModel @Inject constructor(
         .map { it.gameState.score }
         .stateIn(
             viewModelScope,
-            SharingStarted.Eagerly,
+            SharingStarted.Companion.Eagerly,
             0
         )
 
@@ -61,7 +61,7 @@ class GameViewModel @Inject constructor(
         .map { it.gameState.round }
         .stateIn(
             viewModelScope,
-            SharingStarted.Eagerly,
+            SharingStarted.Companion.Eagerly,
             0
         )
 
@@ -69,7 +69,7 @@ class GameViewModel @Inject constructor(
         .map { it.gameState.isGameOver }
         .stateIn(
             viewModelScope,
-            SharingStarted.Eagerly,
+            SharingStarted.Companion.Eagerly,
             false
         )
 

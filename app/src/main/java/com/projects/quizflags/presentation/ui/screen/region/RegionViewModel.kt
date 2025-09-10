@@ -1,4 +1,4 @@
-package com.projects.quizflags.ui.viewModel
+package com.projects.quizflags.presentation.ui.screen.region
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

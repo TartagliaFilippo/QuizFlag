@@ -6,13 +6,13 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.projects.quizflags.domain.model.GameMode
+import com.projects.quizflags.presentation.ui.screen.game.GameScreen
 import com.projects.quizflags.ui.view.EndGameScreen
-import com.projects.quizflags.ui.view.GameScreen
 import com.projects.quizflags.ui.view.HomeScreen
 import com.projects.quizflags.ui.view.RegionChoiceScreen
-import com.projects.quizflags.ui.viewModel.GameViewModel
-import com.projects.quizflags.ui.viewModel.HomeViewModel
-import com.projects.quizflags.ui.viewModel.RegionViewModel
+import com.projects.quizflags.presentation.ui.screen.game.GameViewModel
+import com.projects.quizflags.presentation.ui.screen.home.HomeViewModel
+import com.projects.quizflags.presentation.ui.screen.region.RegionViewModel
 
 @Composable
 fun NavGraph(
@@ -20,9 +20,9 @@ fun NavGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = "home"
+        startDestination = Screen.Home.route
     ) {
-        composable("home") {
+        composable(Screen.Home.route) {
             val homeViewModel: HomeViewModel = hiltViewModel()
 
             HomeScreen(
@@ -31,13 +31,17 @@ fun NavGraph(
             )
         }
 
-        composable("classic_game") {
+        composable(Screen.ClassicGame.route) {
             val gameViewModel: GameViewModel = hiltViewModel()
 
             GameScreen(
-                navController = navController,
-                gameViewModel = gameViewModel,
-                mode = GameMode.ClassicGame
+                gameMode = GameMode.ClassicGame,
+                onNavigateToEndGame = { score ->
+                    navController.navigateToEndGame(score)
+                },
+                onNavigateBack = {
+                    navController.navigateBack()
+                }
             )
         }
 
@@ -54,9 +58,13 @@ fun NavGraph(
             val gameViewModel: GameViewModel = hiltViewModel()
 
             GameScreen(
-                navController = navController,
-                gameViewModel = gameViewModel,
-                mode = GameMode.SurvivalGame
+                gameMode = GameMode.ClassicGame,
+                onNavigateToEndGame = { score ->
+                    navController.navigateToEndGame(score)
+                },
+                onNavigateBack = {
+                    navController.navigateBack()
+                }
             )
         }
 
@@ -65,9 +73,13 @@ fun NavGraph(
             val regionCode = backStackEntry.arguments?.getString("regionCode") ?: "eu"
 
             GameScreen(
-                navController = navController,
-                gameViewModel = gameViewModel,
-                mode = GameMode.RegionGame(regionCode)
+                gameMode = GameMode.RegionGame(regionCode),
+                onNavigateToEndGame = { score ->
+                    navController.navigateToEndGame(score)
+                },
+                onNavigateBack = {
+                    navController.navigateBack()
+                }
             )
         }
 

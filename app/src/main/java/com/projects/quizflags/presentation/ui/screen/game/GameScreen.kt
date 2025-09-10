@@ -1,4 +1,4 @@
-package com.projects.quizflags.presentation.ui.screen
+package com.projects.quizflags.presentation.ui.screen.game
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -37,7 +37,6 @@ import com.projects.quizflags.presentation.ui.components.game.GameAnswersSection
 import com.projects.quizflags.presentation.ui.components.game.GameFlagImage
 import com.projects.quizflags.presentation.ui.components.game.GameProgressSection
 import com.projects.quizflags.presentation.ui.components.game.GameTopBar
-import com.projects.quizflags.ui.viewModel.GameViewModel
 
 @Composable
 fun GameScreen(
