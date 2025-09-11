@@ -8,10 +8,8 @@ import androidx.navigation.compose.composable
 import com.projects.quizflags.domain.model.GameMode
 import com.projects.quizflags.presentation.ui.screen.game.GameScreen
 import com.projects.quizflags.ui.view.EndGameScreen
-import com.projects.quizflags.ui.view.HomeScreen
+import com.projects.quizflags.presentation.ui.screen.home.HomeScreen
 import com.projects.quizflags.ui.view.RegionChoiceScreen
-import com.projects.quizflags.presentation.ui.screen.game.GameViewModel
-import com.projects.quizflags.presentation.ui.screen.home.HomeViewModel
 import com.projects.quizflags.presentation.ui.screen.region.RegionViewModel
 
 @Composable
@@ -23,16 +21,28 @@ fun NavGraph(
         startDestination = Screen.Home.route
     ) {
         composable(Screen.Home.route) {
-            val homeViewModel: HomeViewModel = hiltViewModel()
 
             HomeScreen(
-                navController = navController,
-                homeViewModel = homeViewModel
+                onNavigateToGame = { gameMode ->
+                    when (gameMode) {
+                        is GameMode.ClassicGame -> {
+                            navController.navigate(Screen.ClassicGame.route)
+                        }
+                        is GameMode.RegionGame -> {
+                            navController.navigate(Screen.RegionGame.createRoute(gameMode.regionCode))
+                        }
+                        is GameMode.SurvivalGame -> {
+                            navController.navigate(Screen.SurvivalGame.route)
+                        }
+                    }
+                },
+                onNavigateToRegionChoice = {
+                    navController.navigate(Screen.RegionChoice.route)
+                }
             )
         }
 
         composable(Screen.ClassicGame.route) {
-            val gameViewModel: GameViewModel = hiltViewModel()
 
             GameScreen(
                 gameMode = GameMode.ClassicGame,
@@ -55,7 +65,6 @@ fun NavGraph(
         }
 
         composable("survival_game") {
-            val gameViewModel: GameViewModel = hiltViewModel()
 
             GameScreen(
                 gameMode = GameMode.ClassicGame,
@@ -69,7 +78,6 @@ fun NavGraph(
         }
 
         composable("region_game/{regionCode}") { backStackEntry ->
-            val gameViewModel: GameViewModel = hiltViewModel()
             val regionCode = backStackEntry.arguments?.getString("regionCode") ?: "eu"
 
             GameScreen(
