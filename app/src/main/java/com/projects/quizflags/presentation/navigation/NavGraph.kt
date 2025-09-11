@@ -64,10 +64,10 @@ fun NavGraph(
             )
         }
 
-        composable("survival_game") {
+        composable(Screen.SurvivalGame.route) {
 
             GameScreen(
-                gameMode = GameMode.ClassicGame,
+                gameMode = GameMode.SurvivalGame,
                 onNavigateToEndGame = { score ->
                     navController.navigateToEndGame(score)
                 },
@@ -95,8 +95,13 @@ fun NavGraph(
             val score = backStackEntry.arguments?.getString("score")?.toInt() ?: 0
 
             EndGameScreen(
-                navController = navController,
-                score = score
+                score = score,
+                onPlayAgain = {
+                    navController.popBackStack(Screen.Home.route, inclusive = false)
+                },
+                onNavigateHome = {
+                    navController.popBackStack(Screen.Home.route, inclusive = false)
+                }
             )
         }
     }
