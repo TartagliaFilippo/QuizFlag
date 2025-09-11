@@ -1,4 +1,4 @@
-package com.projects.quizflags.ui.view.home.tablet
+package com.projects.quizflags.presentation.ui.layout.home.tablet
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -13,15 +13,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavHostController
 import com.projects.quizflags.R
+import com.projects.quizflags.domain.model.GameMode
 import com.projects.quizflags.domain.model.GamesRoute
 import com.projects.quizflags.ui.components.ModeButton
 
 @Composable
 fun TabletPortraitLayout(
     games: List<GamesRoute>,
-    navController: NavHostController
+    onNavigateToGame: (GameMode) -> Unit,
+    onNavigateToRegionChoice: () -> Unit
 ) {
     Image(
         modifier = Modifier.fillMaxSize(),
@@ -34,9 +35,9 @@ fun TabletPortraitLayout(
         columns = GridCells.Fixed(2),
         modifier = Modifier
             .fillMaxSize()
-            .padding(horizontal = 16.dp),
-        horizontalArrangement = Arrangement.spacedBy(24.dp),
-        verticalArrangement = Arrangement.spacedBy(24.dp, Alignment.CenterVertically)
+            .padding(horizontal = 32.dp),
+        horizontalArrangement = Arrangement.spacedBy(32.dp),
+        verticalArrangement = Arrangement.spacedBy(32.dp, Alignment.CenterVertically)
     ) {
         items(games) { game ->
             ModeButton(
@@ -44,11 +45,10 @@ fun TabletPortraitLayout(
                 iconDescription = game.name,
                 mode = game.name,
                 onClick = {
-                    val route = when (val mode = game.mode) {
-                        null -> "region_choice"
-                        else -> mode.route
+                    when (val mode = game.mode) {
+                        null -> onNavigateToRegionChoice()
+                        else -> onNavigateToGame(mode)
                     }
-                    navController.navigate(route)
                 }
             )
         }

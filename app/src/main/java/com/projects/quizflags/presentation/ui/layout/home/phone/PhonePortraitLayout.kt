@@ -1,4 +1,4 @@
-package com.projects.quizflags.ui.view.home.phone
+package com.projects.quizflags.presentation.ui.layout.home.phone
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -13,15 +13,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavHostController
 import com.projects.quizflags.R
+import com.projects.quizflags.domain.model.GameMode
 import com.projects.quizflags.domain.model.GamesRoute
 import com.projects.quizflags.ui.components.ModeButton
 
 @Composable
 fun PhonePortraitLayout(
     games: List<GamesRoute>,
-    navController: NavHostController
+    onNavigateToGame: (GameMode) -> Unit,
+    onNavigateToRegionChoice: () -> Unit
 ) {
     Image(
         modifier = Modifier.fillMaxSize(),
@@ -44,11 +45,10 @@ fun PhonePortraitLayout(
                 iconDescription = game.name,
                 mode = game.name,
                 onClick = {
-                    val route = when (val mode = game.mode) {
-                        null -> "region_choice"
-                        else -> mode.route
+                    when (val mode = game.mode) {
+                        null -> onNavigateToRegionChoice()
+                        else -> onNavigateToGame(mode)
                     }
-                    navController.navigate(route)
                 }
             )
         }
