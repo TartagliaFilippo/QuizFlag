@@ -31,7 +31,10 @@ fun ErrorContent(
     modifier: Modifier = Modifier,
     error: String?,
     onRetry: () -> Unit,
-    onDismiss: () -> Unit
+    onDismiss: () -> Unit,
+    title: String = "Ops! Qualcosa è andato storto",
+    retryText: String = "Riprova",
+    dismissText: String = "Annulla"
 ) {
     Box(
         modifier = modifier.fillMaxSize(),
@@ -56,7 +59,7 @@ fun ErrorContent(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Text(
-                    text = "Ops! Qualcosa è andato storto",
+                    text = title,
                     style = MaterialTheme.typography.titleLarge,
                     color = MaterialTheme.colorScheme.error,
                     textAlign = TextAlign.Center
@@ -76,18 +79,26 @@ fun ErrorContent(
                 Row(
                     horizontalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    TextButton(onClick = onDismiss) {
-                        Text("Annulla")
+                    TextButton(
+                        onClick = onDismiss,
+                        modifier = Modifier.weight(1f)
+                    ) {
+                        Text(dismissText)
                     }
 
-                    Button(onClick = onRetry) {
+                    Button(
+                        onClick = onRetry,
+                        modifier = Modifier.weight(1f)
+                    ) {
                         Icon(
                             imageVector = Icons.Default.Refresh,
                             contentDescription = null,
                             modifier = Modifier.size(18.dp)
                         )
+
                         Spacer(modifier = Modifier.width(8.dp))
-                        Text("Riprova")
+
+                        Text(retryText)
                     }
                 }
             }
