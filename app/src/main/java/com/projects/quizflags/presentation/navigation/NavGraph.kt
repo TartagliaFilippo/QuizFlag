@@ -1,7 +1,6 @@
 package com.projects.quizflags.presentation.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -9,8 +8,7 @@ import com.projects.quizflags.domain.model.GameMode
 import com.projects.quizflags.presentation.ui.screen.game.GameScreen
 import com.projects.quizflags.ui.view.EndGameScreen
 import com.projects.quizflags.presentation.ui.screen.home.HomeScreen
-import com.projects.quizflags.ui.view.RegionChoiceScreen
-import com.projects.quizflags.presentation.ui.screen.region.RegionViewModel
+import com.projects.quizflags.presentation.ui.screen.region.RegionChoiceScreen
 
 @Composable
 fun NavGraph(
@@ -55,12 +53,15 @@ fun NavGraph(
             )
         }
 
-        composable("region_choice") {
-            val regionViewModel: RegionViewModel = hiltViewModel()
+        composable(Screen.RegionChoice.route) {
 
             RegionChoiceScreen(
-                navController = navController,
-                regionViewModel = regionViewModel
+                onRegionSelected = { regionCode ->
+                    navController.navigate(Screen.RegionGame.createRoute(regionCode))
+                },
+                onNavigateBack = {
+                    navController.navigateBack()
+                }
             )
         }
 

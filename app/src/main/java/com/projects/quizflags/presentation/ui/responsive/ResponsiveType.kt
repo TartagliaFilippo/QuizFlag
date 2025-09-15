@@ -1,4 +1,4 @@
-package com.projects.quizflags.ui.responsive
+package com.projects.quizflags.presentation.ui.responsive
 
 import androidx.compose.material3.windowsizeclass.WindowSizeClass
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass

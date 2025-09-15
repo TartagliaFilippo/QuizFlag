@@ -10,7 +10,7 @@ import androidx.compose.material3.windowsizeclass.WindowSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import com.projects.quizflags.ui.responsive.responsiveTypography
+import com.projects.quizflags.presentation.ui.responsive.responsiveTypography
 
 private val LightColorScheme = lightColorScheme(
     primary = BluePrimary,

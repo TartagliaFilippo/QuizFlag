@@ -14,9 +14,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.projects.quizflags.domain.model.GameMode
-import com.projects.quizflags.ui.responsive.DeviceType
-import com.projects.quizflags.ui.responsive.calculateWindowSize
-import com.projects.quizflags.ui.responsive.toDeviceType
+import com.projects.quizflags.presentation.ui.responsive.DeviceType
+import com.projects.quizflags.presentation.ui.responsive.calculateWindowSize
+import com.projects.quizflags.presentation.ui.responsive.toDeviceType
 import com.projects.quizflags.ui.theme.QuizFlagsTheme
 import com.projects.quizflags.presentation.ui.layout.home.desktop.DesktopLayout
 import com.projects.quizflags.presentation.ui.layout.home.phone.PhoneLandscapeLayout
