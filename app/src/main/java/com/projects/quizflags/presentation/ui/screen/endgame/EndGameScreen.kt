@@ -1,62 +1,96 @@
-package com.projects.quizflags.ui.view
+package com.projects.quizflags.presentation.ui.screen.endgame
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Button
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import com.projects.quizflags.domain.model.GameMode
+import com.projects.quizflags.presentation.ui.layout.endgame.desktop.DesktopEndGameLayout
+import com.projects.quizflags.presentation.ui.layout.endgame.phone.PhoneLandscapeEndGameLayout
+import com.projects.quizflags.presentation.ui.layout.endgame.phone.PhonePortraitEndGameLayout
+import com.projects.quizflags.presentation.ui.layout.endgame.tablet.TabletLandscapeEndGameLayout
+import com.projects.quizflags.presentation.ui.layout.endgame.tablet.TabletPortraitEndGameLayout
+import com.projects.quizflags.presentation.ui.responsive.DeviceType
+import com.projects.quizflags.presentation.ui.responsive.calculateWindowSize
+import com.projects.quizflags.presentation.ui.responsive.toDeviceType
 
 @Composable
 fun EndGameScreen(
     score: Int,
+    totalQuestions: Int,
+    gameMode: GameMode,
     onPlayAgain: () -> Unit,
     onNavigateHome: () -> Unit
 ) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+    EndGameContent(
+        score = score,
+        totalQuestions = totalQuestions,
+        gameMode = gameMode,
+        onPlayAgain = onPlayAgain,
+        onNavigateHome = onNavigateHome
+    )
+}
+
+@Composable
+private fun EndGameContent(
+    score: Int,
+    totalQuestions: Int,
+    gameMode: GameMode,
+    onPlayAgain: () -> Unit,
+    onNavigateHome: () -> Unit
+) {
+    BoxWithConstraints(
+        modifier = Modifier.fillMaxSize()
     ) {
-        Text(
-            text = "Partita Terminata!",
-            style = MaterialTheme.typography.headlineLarge
-        )
+        with(this) {
+            val windowSize = calculateWindowSize(
+                maxWidth = maxWidth,
+                maxHeight = maxHeight
+            )
 
-        Spacer(modifier = Modifier.height(16.dp))
+            val deviceType = toDeviceType(
+                windowSize,
+                maxWidth,
+                maxHeight
+            )
 
-        Text(
-            text = "Punteggio: $score",
-            style = MaterialTheme.typography.headlineMedium
-        )
-
-        Spacer(modifier = Modifier.height(32.dp))
-
-        Button(
-            onClick = onPlayAgain,
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("Gioca Ancora")
-        }
-
-        Spacer(modifier = Modifier.height(8.dp))
-
-        OutlinedButton(
-            onClick = onNavigateHome,
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("Torna al Menu")
+            when (deviceType) {
+                DeviceType.PhonePortrait -> PhonePortraitEndGameLayout(
+                    score = score,
+                    totalQuestions = totalQuestions,
+                    gameMode = gameMode,
+                    onPlayAgain = onPlayAgain,
+                    onNavigateHome = onNavigateHome
+                )
+                DeviceType.PhoneLandscape -> PhoneLandscapeEndGameLayout(
+                    score = score,
+                    totalQuestions = totalQuestions,
+                    gameMode = gameMode,
+                    onPlayAgain = onPlayAgain,
+                    onNavigateHome = onNavigateHome
+                )
+                DeviceType.TabletPortrait -> TabletPortraitEndGameLayout(
+                    score = score,
+                    totalQuestions = totalQuestions,
+                    gameMode = gameMode,
+                    onPlayAgain = onPlayAgain,
+                    onNavigateHome = onNavigateHome
+                )
+                DeviceType.TabletLandscape -> TabletLandscapeEndGameLayout(
+                    score = score,
+                    totalQuestions = totalQuestions,
+                    gameMode = gameMode,
+                    onPlayAgain = onPlayAgain,
+                    onNavigateHome = onNavigateHome
+                )
+                DeviceType.Desktop -> DesktopEndGameLayout(
+                    score = score,
+                    totalQuestions = totalQuestions,
+                    gameMode = gameMode,
+                    onPlayAgain = onPlayAgain,
+                    onNavigateHome = onNavigateHome
+                )
+            }
         }
     }
 }
