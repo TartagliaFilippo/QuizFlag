@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import com.projects.quizflags.presentation.ui.responsive.ActionOrientation
 
 @Composable
-private fun EndGameActions(
+fun EndGameActions(
     onPlayAgain: () -> Unit,
     onNavigateHome: () -> Unit,
     orientation: ActionOrientation,

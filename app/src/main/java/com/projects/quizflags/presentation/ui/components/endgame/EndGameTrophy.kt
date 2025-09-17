@@ -15,7 +15,7 @@ import com.projects.quizflags.presentation.ui.utility.getTrophyEmoji
 import com.projects.quizflags.presentation.ui.utility.getTrophyTitle
 
 @Composable
-private fun EndGameTrophy(score: Int, totalQuestions: Int) {
+fun EndGameTrophy(score: Int, totalQuestions: Int) {
     val percentage = if (totalQuestions > 0) (score * 100) / totalQuestions else 0
 
     Column(
