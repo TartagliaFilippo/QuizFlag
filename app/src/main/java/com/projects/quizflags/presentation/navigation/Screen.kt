@@ -1,5 +1,7 @@
 package com.projects.quizflags.presentation.navigation
 
+import com.projects.quizflags.domain.model.GameMode
+
 sealed class Screen(val route: String) {
     object Home : Screen("home")
     object ClassicGame : Screen("classic_game")
@@ -10,7 +12,14 @@ sealed class Screen(val route: String) {
         fun createRoute(regionCode: String) = "region_game/$regionCode"
     }
 
-    object EndGame : Screen("endgame/{score}") {
-        fun createRoute(score: Int) = "endgame/$score"
+    object EndGame : Screen("endgame/{score}/{totalQuestions}/{gameMode}") {
+        fun createRoute(score: Int, totalQuestions: Int, gameMode: GameMode): String {
+            val gameModeString = when (gameMode) {
+                is GameMode.ClassicGame -> "classic"
+                is GameMode.SurvivalGame -> "survival"
+                is GameMode.RegionGame -> gameMode.regionCode
+            }
+            return "endgame/$score/$totalQuestions/$gameModeString"
+        }
     }
 }
