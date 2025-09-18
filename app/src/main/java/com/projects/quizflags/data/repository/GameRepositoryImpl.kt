@@ -32,11 +32,25 @@ class GameRepositoryImpl @Inject constructor(
             countriesResult.fold(
                 onSuccess = { countries ->
                     allCountries = countries
-                    availableCountries = when (gameMode) {
-                        is GameMode.ClassicGame -> countries.shuffled().take(10).toMutableList()
-                        is GameMode.RegionGame -> countries.toMutableList()
-                        is GameMode.SurvivalGame -> countries.toMutableList()
+
+                    // Calcolo il numero totale di domande basato sulla modalità
+                    val totalQuestions = when (gameMode) {
+                        is GameMode.ClassicGame -> gameMode.totalQuestions
+                        is GameMode.SurvivalGame -> countries.size
+                        is GameMode.RegionGame -> countries.size
                     }
+
+                    availableCountries = when (gameMode) {
+                        is GameMode.ClassicGame -> countries.shuffled().take(gameMode.totalQuestions).toMutableList()
+                        is GameMode.SurvivalGame -> countries.toMutableList()
+                        is GameMode.RegionGame -> countries.toMutableList()
+                    }
+
+                    gameState = GameState(
+                        gameMode = gameMode,
+                        totalQuestions = totalQuestions
+                    )
+
                     generateNewQuestion()
                 },
                 onFailure = { exception ->

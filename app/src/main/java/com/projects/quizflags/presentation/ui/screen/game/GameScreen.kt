@@ -41,7 +41,7 @@ import com.projects.quizflags.presentation.ui.components.game.GameTopBar
 @Composable
 fun GameScreen(
     gameMode: GameMode,
-    onNavigateToEndGame: (Int) -> Unit,
+    onNavigateToEndGame: (Int, Int, GameMode) -> Unit,
     onNavigateBack: () -> Unit,
     gameViewModel: GameViewModel = hiltViewModel()
 ) {
@@ -53,7 +53,11 @@ fun GameScreen(
 
     LaunchedEffect(uiState.gameState.isGameOver) {
         if (uiState.gameState.isGameOver) {
-            onNavigateToEndGame(uiState.gameState.score)
+            onNavigateToEndGame(
+                uiState.gameState.score,
+                uiState.gameState.totalQuestions,
+                gameMode
+            )
         }
     }
 
@@ -200,7 +204,9 @@ private fun MobileGameLayout(
         GameProgressSection(
             score = gameState.score,
             round = gameState.round,
-            totalQuestions = gameState.totalQuestions
+            totalQuestions = gameState.totalQuestions,
+            gameMode = gameState.gameMode ?: GameMode.ClassicGame,
+            modifier = Modifier.weight(0.3f)
         )
     }
 }
