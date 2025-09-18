@@ -28,11 +28,11 @@ fun NavGraph(
                         is GameMode.ClassicGame -> {
                             navController.navigate(Screen.ClassicGame.route)
                         }
-                        is GameMode.RegionGame -> {
-                            navController.navigate(Screen.RegionGame.createRoute(gameMode.regionCode))
-                        }
                         is GameMode.SurvivalGame -> {
                             navController.navigate(Screen.SurvivalGame.route)
+                        }
+                        is GameMode.RegionGame -> {
+                            navController.navigate(Screen.RegionGame.createRoute(gameMode.regionCode))
                         }
                     }
                 },
@@ -46,8 +46,21 @@ fun NavGraph(
 
             GameScreen(
                 gameMode = GameMode.ClassicGame,
-                onNavigateToEndGame = { score ->
-                    navController.navigateToEndGame(score)
+                onNavigateToEndGame = { score, totalQuestions, gameMode ->
+                    navController.navigateToEndGame(score, totalQuestions, gameMode)
+                },
+                onNavigateBack = {
+                    navController.navigateBack()
+                }
+            )
+        }
+
+        composable(Screen.SurvivalGame.route) {
+
+            GameScreen(
+                gameMode = GameMode.SurvivalGame,
+                onNavigateToEndGame = { score, totalQuestions, gameMode ->
+                    navController.navigateToEndGame(score, totalQuestions, gameMode)
                 },
                 onNavigateBack = {
                     navController.navigateBack()
@@ -60,19 +73,6 @@ fun NavGraph(
             RegionChoiceScreen(
                 onRegionSelected = { regionCode ->
                     navController.navigate(Screen.RegionGame.createRoute(regionCode))
-                },
-                onNavigateBack = {
-                    navController.navigateBack()
-                }
-            )
-        }
-
-        composable(Screen.SurvivalGame.route) {
-
-            GameScreen(
-                gameMode = GameMode.SurvivalGame,
-                onNavigateToEndGame = { score ->
-                    navController.navigateToEndGame(score)
                 },
                 onNavigateBack = {
                     navController.navigateBack()
@@ -93,8 +93,8 @@ fun NavGraph(
 
             GameScreen(
                 gameMode = GameMode.RegionGame(regionCode),
-                onNavigateToEndGame = { score ->
-                    navController.navigateToEndGame(score)
+                onNavigateToEndGame = { score, totalQuestions, gameMode ->
+                    navController.navigateToEndGame(score, totalQuestions, gameMode)
                 },
                 onNavigateBack = {
                     navController.navigateBack()

@@ -11,8 +11,8 @@ fun NavHostController.navigateToGame(gameMode: GameMode) {
     }
 }
 
-fun NavHostController.navigateToEndGame(score: Int) {
-    navigate(Screen.EndGame.createRoute(score)) {
+fun NavHostController.navigateToEndGame(score: Int, totalQuestions: Int, gameMode: GameMode) {
+    navigate(Screen.EndGame.createRoute(score, totalQuestions, gameMode)) {
         popUpTo(Screen.Home.route)
     }
 }
