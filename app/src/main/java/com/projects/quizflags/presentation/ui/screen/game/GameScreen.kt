@@ -1,27 +1,16 @@
 package com.projects.quizflags.presentation.ui.screen.game
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
+import android.content.res.Configuration
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.projects.quizflags.domain.model.Country
@@ -31,12 +20,15 @@ import com.projects.quizflags.domain.model.GameState
 import com.projects.quizflags.domain.model.QuizQuestion
 import com.projects.quizflags.presentation.state.GameUiEvent
 import com.projects.quizflags.presentation.state.GameUiState
+import com.projects.quizflags.presentation.ui.components.common.EmptyContent
 import com.projects.quizflags.presentation.ui.components.common.ErrorContent
 import com.projects.quizflags.presentation.ui.components.common.LoadingContent
-import com.projects.quizflags.presentation.ui.components.game.GameAnswersSection
-import com.projects.quizflags.presentation.ui.components.game.GameFlagImage
-import com.projects.quizflags.presentation.ui.components.game.GameProgressSection
 import com.projects.quizflags.presentation.ui.components.game.GameTopBar
+import com.projects.quizflags.presentation.ui.layout.game.desktop.DesktopGameLayout
+import com.projects.quizflags.presentation.ui.layout.game.phone.PhoneLandscapeGameLayout
+import com.projects.quizflags.presentation.ui.layout.game.phone.PhonePortraitGameLayout
+import com.projects.quizflags.presentation.ui.layout.game.tablet.TabletLandscapeGameLayout
+import com.projects.quizflags.presentation.ui.layout.game.tablet.TabletPortraitGameLayout
 
 @Composable
 fun GameScreen(
@@ -118,7 +110,7 @@ private fun GamePlayContent(
     val question = uiState.gameState.currentQuestion
 
     if (question == null) {
-        GameEmptyState()
+        EmptyContent()
         return
     }
 
@@ -144,9 +136,12 @@ private fun ResponsiveGameLayout(
     onAnswerSelected: (Country) -> Unit
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+        val configuration = LocalConfiguration.current
+        val isLandscape = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
+
         when{
             maxWidth < 600.dp -> {
-                MobileGameLayout(
+                PhonePortraitGameLayout(
                     question = question,
                     gameState = gameState,
                     selectedAnswer = selectedAnswer,
@@ -155,104 +150,50 @@ private fun ResponsiveGameLayout(
                     onAnswerSelected = onAnswerSelected
                 )
             }
-            maxWidth < 840.dp -> {
-                // TODO: Implementa la vista tablet
+
+            maxWidth < 600.dp && isLandscape -> {
+                PhoneLandscapeGameLayout(
+                    question = question,
+                    gameState = gameState,
+                    selectedAnswer = selectedAnswer,
+                    lastResult = lastResult,
+                    showFeedback = showFeedback,
+                    onAnswerSelected = onAnswerSelected
+                )
             }
+
+            maxWidth < 840.dp && !isLandscape -> {
+                TabletPortraitGameLayout(
+                    question = question,
+                    gameState = gameState,
+                    selectedAnswer = selectedAnswer,
+                    lastResult = lastResult,
+                    showFeedback = showFeedback,
+                    onAnswerSelected = onAnswerSelected
+                )
+            }
+
+            maxWidth < 840.dp && isLandscape -> {
+                TabletLandscapeGameLayout(
+                    question = question,
+                    gameState = gameState,
+                    selectedAnswer = selectedAnswer,
+                    lastResult = lastResult,
+                    showFeedback = showFeedback,
+                    onAnswerSelected = onAnswerSelected
+                )
+            }
+
             else -> {
-                // TODO: Implementa la vista desktop
+                DesktopGameLayout(
+                    question = question,
+                    gameState = gameState,
+                    selectedAnswer = selectedAnswer,
+                    lastResult = lastResult,
+                    showFeedback = showFeedback,
+                    onAnswerSelected = onAnswerSelected
+                )
             }
         }
-    }
-}
-
-@Composable
-private fun MobileGameLayout(
-    question: QuizQuestion,
-    gameState: GameState,
-    selectedAnswer: String?,
-    lastResult: GameResult?,
-    showFeedback: Boolean,
-    onAnswerSelected: (Country) -> Unit
-) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .padding(16.dp),
-        verticalArrangement = Arrangement.SpaceBetween
-    ) {
-        // Spacer per TopBar
-        Spacer(modifier = Modifier.height(56.dp))
-
-        // Flag e domanda
-        GameQuestionSection(
-            question = question,
-            modifier = Modifier.weight(1f)
-        )
-
-        // Bottoni risposte
-        GameAnswersSection(
-            question = question,
-            selectedAnswer = selectedAnswer,
-            lastResult = lastResult,
-            showFeedback = showFeedback,
-            onAnswerSelected = onAnswerSelected,
-            modifier = Modifier.weight(1f)
-        )
-
-        // Score e progresso
-        GameProgressSection(
-            score = gameState.score,
-            round = gameState.round,
-            totalQuestions = gameState.totalQuestions,
-            gameMode = gameState.gameMode ?: GameMode.ClassicGame,
-            modifier = Modifier.weight(0.3f)
-        )
-    }
-}
-
-@Composable
-private fun GameQuestionSection(
-    question: QuizQuestion,
-    modifier: Modifier = Modifier
-) {
-    Column(
-        modifier = modifier.fillMaxWidth(),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
-        // Flag Image
-        GameFlagImage(
-            flagResourceId = question.flagResourceId,
-            country = question.correctAnswer,
-            modifier = Modifier
-                .fillMaxWidth()
-                .aspectRatio(3f / 2f)
-                .clip(RoundedCornerShape(12.dp))
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        // Question Text
-        Text(
-            text = "Qual è questo paese?",
-            style = MaterialTheme.typography.headlineSmall,
-            textAlign = TextAlign.Center,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-    }
-}
-
-@Composable
-private fun GameEmptyState() {
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(
-            text = "Nessuna domanda disponibile",
-            style = MaterialTheme.typography.bodyLarge,
-            textAlign = TextAlign.Center
-        )
     }
 }
